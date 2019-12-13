@@ -3,14 +3,9 @@ title: "Shiny App Templates"
 author: "`r library(htmltools)
 HTML('<a href=http://idn.it.ox.ac.uk>Oxford University Interactive Data Network</a>')`"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
-    number_sections: false
-    css: gh-pages_global/gh-pages_navbar.css
-    includes:
-      in_header: gh-pages_global/_navbar.html
+  html_document: default
 ---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	echo = TRUE,

@@ -28,13 +28,11 @@ Stacked Bar Charts are useful for visualising data with two levels, what might b
 
 <iframe src="https://trainingidn.shinyapps.io/htmlwidget_template_stacked_bar_chart?allowPopout=true" width="100%" height="580px"></iframe>
 
-
 A toy example dataset is provided in the `oidnChaRts` library:
 
-
-
-
 ```{r}
+# devtools::install_github("davan690/oidnchaRts", lib="C:/Program Files/R/R-3.6.1/library")
+
 library(oidnChaRts)
 library(DT)
 library(dplyr)

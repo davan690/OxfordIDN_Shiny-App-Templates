@@ -11,6 +11,7 @@ output:
     includes:
       in_header: gh-pages_global/_navbar.html
 ---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	echo = TRUE,
