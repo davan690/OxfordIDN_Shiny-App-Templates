@@ -31,11 +31,55 @@ Stacked Bar Charts are useful for visualising data with two levels, what might b
 A toy example dataset is provided in the `oidnChaRts` library:
 
 ```{r}
-# devtools::install_github("davan690/oidnchaRts", lib="C:/Program Files/R/R-3.6.1/library")
+# devtools::install_github("davan690/oidnchaRts", lib="C:/Program Files/R/R-3.6.2/library")
 
+
+# needs update1: All                                       
+#  2: CRAN packages only                        
+#  3: None                                      
+#  4: dplyr       (0.8.3     -> 0.8.4   ) [CRAN]
+#  5: tidyr       (1.0.0     -> 1.0.2   ) [CRAN]
+#  6: jsonlite    (1.6       -> 1.6.1   ) [CRAN]
+#  7: broom       (0.5.3     -> 0.5.4   ) [CRAN]
+#  8: cli         (2.0.0     -> 2.0.1   ) [CRAN]
+#  9: hms         (0.5.2     -> 0.5.3   ) [CRAN]
+# 10: rlang       (0.4.2     -> 0.4.4   ) [CRAN]
+# 11: rstudioapi  (0.10      -> 0.11    ) [CRAN]
+# 12: tidyselect  (0.2.5     -> 1.0.0   ) [CRAN]
+# 13: BH          (1.72.0-2  -> 1.72.0-3) [CRAN]
+# 14: stringi     (1.4.3     -> 1.4.5   ) [CRAN]
+# 15: vctrs       (0.2.1     -> 0.2.2   ) [CRAN]
+# 16: yaml        (2.2.0     -> 2.2.1   ) [CRAN]
+# 17: raster      (3.0-7     -> 3.0-12  ) [CRAN]
+# 18: zoo         (1.8-6     -> 1.8-7   ) [CRAN]
+# 19: hexbin      (1.28.0    -> 1.28.1  ) [CRAN]
+# 20: data.table  (1.12.6    -> 1.12.8  ) [CRAN]
+# 21: gistr       (0.4.2     -> 0.5.0   ) [CRAN]
+# 22: farver      (2.0.1     -> 2.0.3   ) [CRAN]
+# 23: fansi       (0.4.0     -> 0.4.1   ) [CRAN]
+# 24: DBI         (1.0.0     -> 1.1.0   ) [CRAN]
+# 25: mime        (0.7       -> 0.9     ) [CRAN]
+# 26: prettyunits (1.0.2     -> 1.1.1   ) [CRAN]
+# 27: callr       (3.4.0     -> 3.4.1   ) [CRAN]
+# 28: rmarkdown   (1.18      -> 2.1     ) [CRAN]
+# 29: knitr       (1.26      -> 1.28    ) [CRAN]
+# 30: tinytex     (0.18      -> 0.19    ) [CRAN]
+# 31: xfun        (0.11      -> 0.12    ) [CRAN]
+# 32: XML         (3.98-1.20 -> 3.99-0.3) [CRAN]
 library(oidnChaRts)
 library(DT)
 library(dplyr)
+
+# sets paths for computers with other software components
+# this code block produces an enviroment warning
+# but not sure how to sort depenancies still
+# Feb2020
+
+# myPaths <- .libPaths("C:/Program Files/R/R-3.6.2/library")
+# myPaths <- c(myPaths)
+# .libPaths(myPaths)  # add new path
+# .libPaths()
+
 data_stacked_bar_chart %>%
   sample_n(10) %>%
   datatable(rownames = F)
@@ -63,10 +107,6 @@ This template contains a number of standard features from the IDN Templates, you
 - allowPopout
 - navbarPage
 - Loading CSS
-
-
-
-
 
 # Where can I get more help?
 
