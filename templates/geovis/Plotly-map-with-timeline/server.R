@@ -18,7 +18,7 @@ url1 <- url2 <- ""
 ### ========================================================
 
 ## Import file
-example_map_data <- read.csv(file ="data/example-map-data.csv", stringsAsFactors = FALSE)
+example_map_data <- read.csv(file ="C://Code/OxfordIDN_Shiny-App-Templates/data/example-map-data.csv", stringsAsFactors = FALSE)
 example_map_data$Date <- force_tz(ymd(example_map_data$Date, quiet = TRUE), tzone = "GMT")
 
 ## Coerce dates into dates:
